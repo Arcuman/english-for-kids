@@ -84,6 +84,7 @@ export function Cards(
     }
 
     if (state.gameState.value) {
+        starContainer.classList.remove("invisible");
         const audioArr = state.audioArray.value;
         playPanel.querySelector(".play-panel-play").classList.remove("active");
         playPanel.querySelector(".play-panel-repeat").classList.add("active");
@@ -114,6 +115,7 @@ export function Cards(
         playPanel
             .querySelector(".play-panel-repeat")
             .classList.remove("active");
+        starContainer.classList.add("invisible");
         starContainer.innerHTML = "";
     }
 }

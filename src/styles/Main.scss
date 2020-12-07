@@ -1,13 +1,12 @@
 .main-container {
-  width:85%;
-  margin: 20px auto 0;
+  flex: 1 0 auto;
+  width:100%;
+  margin: 0 auto;
   max-width: 1350px;
   position: relative;
   .container-word-card,
   .container-card
   {
-    margin: -20px;
-    margin-bottom: -50px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;

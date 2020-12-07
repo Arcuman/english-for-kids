@@ -27,6 +27,7 @@ import {
 } from "./js/actions/actions";
 import { setCards } from "./views/Pages/Main/Cards/actions/actions";
 import { getStatistics } from "./js/Utils/Statistics";
+import Footer from "./views/Components/Footer";
 
 function createParsedUrl(request) {
     return (
@@ -76,7 +77,7 @@ const create = () => {
     location.hash = "/";
     getStatistics();
     const store = connect(rootReducer);
-
+    Footer();
     MainInit();
 
     const startGameHandler = () => {

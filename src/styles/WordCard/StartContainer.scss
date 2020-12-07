@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: flex-end;
   overflow: hidden;
-  margin: 5px 15px;
-  height: 40px;
+  margin: 0 15px;
+  height: 35px;
   width: 90%;
   .star{
     width: 35px;
@@ -15,4 +15,7 @@
       height: 35px;
     }
   }
+}
+.invisible{
+  display: none;
 }
